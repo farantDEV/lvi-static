@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Organisation et décoration de la maison"/>
+        <meta name="description" content="Organisation et décoration de la maison">
         
         <link rel="icon" type="image/svg" href="#">
         <link href="style.css" rel="stylesheet">
@@ -28,6 +28,8 @@
                 <img src="assets/logo/logolvi+rd.svg" class="logo">
              </nav>
         </header>
+        <main class="hero">
+        </main>
     </body>
     
 </html>

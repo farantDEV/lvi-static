@@ -64,3 +64,19 @@ img.logo{
     margin-left: auto;
     margin-right: auto;
 }
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px){
+    .navbar{
+        height: 11em;        
+    }
+    .hero{
+    height: 90vh;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
+    background-size:contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+}
