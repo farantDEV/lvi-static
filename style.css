@@ -21,6 +21,9 @@
 }
 
 /*navbar*/
+.navbar{
+    display: grid;
+}
 .icons{
     height: 25px;
     width: 25px;
@@ -55,4 +58,9 @@
 .btn:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+img.logo{
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }

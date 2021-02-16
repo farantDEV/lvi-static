@@ -24,9 +24,9 @@
                     <button class="media-icon btn" type="button">
                         <img src="assets/icon/media.svg" alt="media icon" class="icons">
                     </button>
-                    
                 </div>
-            </nav>
+                <img src="assets/logo/logolvi+rd.svg" class="logo">
+             </nav>
         </header>
     </body>
     
