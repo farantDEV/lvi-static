@@ -29,6 +29,12 @@
              </nav>
         </header>
         <main class="hero">
+            <div class="hero-text">
+                <h1><span class="bcs">Bien chez soi ,</span> <span class="bes">bien en soi !</span></h1>
+                <h2>Le corps est la demeure 
+                    de l’âme Comme la maison 
+                    est celle du corps.</h2>
+            </div>
         </main>
     </body>
     

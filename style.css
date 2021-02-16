@@ -5,19 +5,23 @@
 }
 @font-face{
     font-family: homemadeapple;
-    src: url(assets/fonts/hma/hma.ttf);
+    src: url(assets/font/hma/hma.ttf);
 }
 @font-face{
     font-family: audrey-bold;
-    src: url(assets/fonts/ad/ad.otf);
+    src: url(assets/font/ad/ad.otf);
 }
 @font-face{
     font-family: champagneandlimousines-bold;
-    src: url(assets/fonts/champ/clb.ttf);
+    src: url(assets/font/champ/clb.ttf);
 }
  @font-face{   
     font-family: champagneandlimousines;
-    src: url(assets/fonts/champ/cl.ttf);
+    src: url(assets/font/champ/cl.ttf);
+}
+
+body, html{
+    font-family: "champagneandlimousines", sans-serif;
 }
 
 /*navbar*/
@@ -65,6 +69,45 @@ img.logo{
     margin-right: auto;
 }
 
+/*text*/
+H1{
+    font-family: "homemadeapple", sans-serif;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    font-size: 55px;
+    
+}
+H2{
+    font-family: "champagneandlimousines-bold", sans-serif;
+    
+    font-size: 25px;
+    margin: 3px 35%;
+    opacity: 1;
+    animation-name: opacite;
+    animation-duration: 10s;
+    
+}
+H3{
+    font-family: "audrey-bold", sans-serif;
+    color: #012169;
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+P{
+    color: #012169;
+    font-size: 20px;
+    margin: 0 15% 2%;
+}
+.hero-text {
+  text-align: center;
+  
+  margin-bottom: 80px;
+    
+  
+  
+  color: #ffffff;
+}
+
 /*X-Small devices (portrait phones, less than 576px)*/
 @media screen and (max-width: 575.98px){
     .navbar{
@@ -79,4 +122,12 @@ img.logo{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+    H1{
+        font-size: 36px;
+        padding-top: 24%;
+        margin: 0 7% 3% 7%;
+   }
+    H2{
+       margin: 0; 
+    }
 }
