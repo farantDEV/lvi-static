@@ -1,0 +1,58 @@
+/*Fonts*/
+@font-face{
+    font-family: audrey;
+    src: url(assets/fonts/ad/adb.otf);
+}
+@font-face{
+    font-family: homemadeapple;
+    src: url(assets/fonts/hma/hma.ttf);
+}
+@font-face{
+    font-family: audrey-bold;
+    src: url(assets/fonts/ad/ad.otf);
+}
+@font-face{
+    font-family: champagneandlimousines-bold;
+    src: url(assets/fonts/champ/clb.ttf);
+}
+ @font-face{   
+    font-family: champagneandlimousines;
+    src: url(assets/fonts/champ/cl.ttf);
+}
+
+/*navbar*/
+.icons{
+    height: 25px;
+    width: 25px;
+}
+.email-icon.btn{
+    background-color: #012169;
+}
+.phone-icon.btn{
+    background-color: #da291c;
+}
+.media-icon.btn{
+    background-color: #ffd700;
+}
+.btn {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.btn:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
