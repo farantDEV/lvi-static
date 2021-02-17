@@ -35,6 +35,16 @@
                     de l’âme Comme la maison 
                     est celle du corps.</h2>
             </div>
+            <div class="promo">
+                <h3>Nouveaux services en ligne disponibles prochainement</h3>
+                <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
+                <p>Renseignez votre email pour recevoir des promotions exclusives</p>
+                <form method="post">
+                    <input class="textarea" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
+                    <input class="form-btn" type="button" value="Je veux !" onclick="sendEmail()"/>
+                </form>
+                
+            </div>
         </main>
     </body>
     
