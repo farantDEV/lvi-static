@@ -43,9 +43,14 @@
                     <input class="textarea" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
                     <input class="form-btn" type="button" value="Je veux !" onclick="sendEmail()"/>
                 </form>
-                
             </div>
         </main>
+        <aside class="contact">
+            <a href="" class="link">CGU</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
+        </aside>
+        <footer>
+            <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
+        </footer>
     </body>
     
 </html>
