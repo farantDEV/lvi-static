@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Organisation et décoration de la maison">
         
-        <link rel="icon" type="image/svg" href="#">
+        <link rel="icon" type="image/svg" href="assets/favicon/toits-lvi.svg">
         <link href="style.css" rel="stylesheet">
         
         <title>La vie d'intérieur</title>

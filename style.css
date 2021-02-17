@@ -26,7 +26,8 @@ body, html{
 
 /*navbar*/
 .navbar{
-    display: grid;
+    display: flex;
+    height: 11em;
 }
 .icons{
     height: 25px;
@@ -64,9 +65,12 @@ body, html{
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 img.logo{
-    height: 200px;
+    height: 290px;
     margin-left: auto;
     margin-right: auto;
+}
+.container.ronds{
+   position: absolute;
 }
 
 /*text*/
@@ -75,6 +79,7 @@ H1{
     margin-bottom: 3px;
     margin-top: 3px;
     font-size: 55px;
+    padding-top: 10%;
     
 }
 H2{
@@ -100,34 +105,66 @@ P{
 }
 .hero-text {
   text-align: center;
-  
   margin-bottom: 80px;
-    
-  
-  
   color: #ffffff;
 }
-
-/*X-Small devices (portrait phones, less than 576px)*/
-@media screen and (max-width: 575.98px){
-    .navbar{
-        height: 11em;        
-    }
-    .hero{
+.hero{
     height: 90vh;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/dsk-bg.jpg);
     background-size:contain;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;    
+}
+
+/*Responsive*/
+/*X-Small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575.98px){
+    .navbar{
+        display: grid;
+                
+    }
+    .container.ronds{
+        position: relative;
+    }
+    img.logo{
+        height: 210px;
+    }
+    .hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
+    
 }
     H1{
         font-size: 36px;
-        padding-top: 24%;
+        padding-top: 29%;
         margin: 0 7% 3% 7%;
    }
     H2{
        margin: 0; 
+    }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (min-width: 768px) and (max-width: 1199.98px){
+    .navbar{
+        height: 9em;
+    }
+    .container.ronds{
+        width: 200px;
+    }
+    img.logo{
+        height: 230px;
+    }
+    .hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/tab-bg.jpg);
+    
+    }
+    H1{
+        font-size: 42px;
+        padding-top: 15%;
+        margin: 0 10% 0 10%;
+    }
+    H2{
+        margin: 1% 25% 0 25%;
     }
 }
