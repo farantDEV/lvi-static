@@ -35,12 +35,18 @@ body, html{
 }
 .email-icon.btn{
     background-color: #012169;
+    animation-name: fadeIn;
+    animation-delay: 1s;
 }
 .phone-icon.btn{
     background-color: #da291c;
+    animation-name: fadeIn;
+    animation-delay: 2s;
 }
 .media-icon.btn{
     background-color: #ffd700;
+    animation-name: fadeIn;
+    animation-delay: 3s;
 }
 .btn {
     border: 0;
@@ -57,7 +63,7 @@ body, html{
 }
 
 .btn:hover {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #fafafa;
 }
 
 .btn:active {
@@ -80,7 +86,7 @@ H1{
     margin-top: 3px;
     font-size: 55px;
     padding-top: 10%;
-    
+    animation-name: fadeInLeft;
 }
 H2{
     font-family: "champagneandlimousines-bold", sans-serif;
@@ -88,9 +94,9 @@ H2{
     font-size: 25px;
     margin: 3px 35%;
     opacity: 1;
-    animation-name: opacite;
-    animation-duration: 10s;
-    
+    animation-name: backInUp;
+    animation-delay: 2s;
+        
 }
 H3{
     font-family: "audrey-bold", sans-serif;
@@ -98,11 +104,13 @@ H3{
     font-size: 25px;
     margin: 5%;
     text-transform: uppercase;
+    animation-name: flipInX;
+    animation-delay: 6s;
 }
 P{
     color: #012169;
-    font-size: 16px;
-    margin: 3%;
+    font-size: 25px;
+    margin: 0 11% 2% 11%;
 }
 .hero-text {
   text-align: center;
@@ -168,6 +176,34 @@ a{
     color: #012169;
     font-size: 10px
 }
+/*Animation cf H1*/
+/*Text*/
+.bes{
+    animation: fadeIn;
+    animation-delay: 3s;
+}
+.contact-form{
+    animation-name: backInUp;
+    animation-delay: 6s;
+}
+
+
+.animate__animated.animate__backInUp {
+  --animate-duration: 5s;
+}
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 3s;
+}
+.animate__animated.animate__fadeIn {
+  --animate-duration: 5s;
+}
+.animate__animated.animate__fliInX {
+  --animate-duration: 5s;
+}
+.animate__animated.animate__heartBeat {
+  --animate-duration: 3s;
+}
+
 
 
 
@@ -203,7 +239,7 @@ a{
         padding-top: 10%;
     }
     img.circles{
-        margin: 10% 0 10% 0;
+        margin: 5% 0 5% 0;
     }
     p{
         margin: 0 7% 5% 7%;
