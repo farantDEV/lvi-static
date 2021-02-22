@@ -7,6 +7,7 @@
         
         <link rel="icon" type="image/svg" href="assets/favicon/toits-lvi.svg">
         <link href="style.css" rel="stylesheet">
+        <link href="modal.css" rel="stylesheet">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
         <title>La vie d'intérieur</title>
@@ -22,13 +23,39 @@
                     <button class="phone-icon btn animate__animated animate__fadeIn" type="button">
                         <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
                     </button>
-                    <button class="media-icon btn animate__animated animate__fadeIn" type="button">
+                    <button data-modal="#modal-youtube" class="media-icon btn animate__animated animate__fadeIn" type="button">
                         <img src="assets/icon/media.svg" alt="media icon" class="icons">
                     </button>
                 </div>
                 <img src="assets/logo/logolvi+rd.svg" class="logo">
              </nav>
         </header>
+        <div class="modal" data-modal-window id="modal-youtube">
+            <iframe class="media-player" src="https://www.youtube.com/embed/CRS6yABFKBo" frameborder="0" allowfullscreen></iframe>
+            <button data-modal-close>X</button>
+            <div class="modal-text">
+                <img class="modal-logo-lvi" src="assets/logo/logo-LVI-alt-clr.svg" alt="logo la vie d'intérieur">
+                <h2 class="discount">jusqu'a -50% de remise</h2>
+                <img class="modal-logo-rd" src="assets/logo/3rds.svg" alt="logo 3 ronds la vie d'intérieur">
+                <p class="discount">Bénéficiez d'une remise de 10% lorsque vous recommandez nos services à votre entourage, offre cumulable jusqu'à 5 fois. <a href="">Voir conditions</a></p><br/>
+                <p>Partagez sur vos réseaux</p>
+                <div id="share-buttons">
+                    <!-- Facebook -->
+                    <a href="http://www.facebook.com/sharer.php?u=https://nok-it.com" target="_blank">
+                        <img class="logo-rs" src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                    </a>
+                     <!-- LinkedIn -->
+                    <a  href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://nok-it.com" target="_blank">
+                        <img class="logo-rs" src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://twitter.com/share?url=https://nok-it.com&amp;text=La%20vie%20dinterieur&amp;hashtags=nok-it" target="_blank">
+                        <img class="logo-rs" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                    </a>
+                </div>
+                
+            </div>
+        </div>
         <main class="hero">
             <div class="hero-text">
                 <h1 class="animate__animated animate__fadeInLeft"><span class="bcs ">Bien chez soi ,</span> <span class="bes animate__animated animate__fadeIn">bien en soi !</span></h1>
@@ -36,6 +63,7 @@
                     de l’âme Comme la maison 
                     est celle du corps.</h2>
             </div>
+            
             <div class="promo">
                 <h3 class="animate__animated animate__flipInX">Nouveaux services en ligne disponibles prochainement</h3>
                 <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
@@ -60,6 +88,7 @@
 	           document.getElementById('emailForm').action = "mailto:mail@exemple?subject=liste%20des%20utilisateurs&body=Inscrivez-moi" + document.getElementById('email').value;
             }
         </script>
+        <script src="modal.js"></script>
     </body>
     
 </html>
