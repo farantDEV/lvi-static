@@ -1,0 +1,4 @@
+AuthName "Page d'administration"
+AuthType Basic
+AuthUserFile "c:/wamp64/www/lvi-static/admin/.htpasswd"
+Require valid-user

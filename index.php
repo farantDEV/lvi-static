@@ -41,9 +41,9 @@
                 <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
                 <div class="contact-form animate__animated animate__backInUp">
                     <p>Renseignez votre email pour recevoir des promotions exclusives</p>
-                    <form method="post">
+                    <form method="post" action="#" enctype="text/plain" id="emailForm" onsubmit="sendMail()">
                         <input class="textarea" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
-                        <input class="form-btn" type="button" value="Je veux !" onclick="sendEmail()"/>
+                        <input class="form-btn" type="submit" value="Je veux !" />
                     </form>
                 </div>
                 
@@ -55,6 +55,11 @@
         <footer>
             <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
         </footer>
+        <script>
+            function sendMail(){
+	           document.getElementById('emailForm').action = "mailto:mail@exemple?subject=liste%20des%20utilisateurs&body=Inscrivez-moi" + document.getElementById('email').value;
+            }
+        </script>
     </body>
     
 </html>
