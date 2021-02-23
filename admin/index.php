@@ -1,15 +1,20 @@
-<!doctype html>
-<html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Page administration laviedinterieur.fr">
-        
-        <link rel="icon" type="image/svg" href="assets/favicon/toits-lvi.svg">
-        <link href="admin.css" rel="stylesheet">
-                
-        <title>Liste des souscripteur</title>
+<form id="form">
+  <div class="field">
+    <label for="user_email">user_email</label>
+    <input type="text" name="user_email" id="user_email">
+  </div>
+  <div class="field">
+    <label for="reply_to">reply_to</label>
+    <input type="text" name="reply_to" id="reply_to">
+  </div>
 
-    </head>
+  <input type="submit" id="button" value="Send Email" >
+</form>
 
-</html>
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_NXMQ7YnAIYzxPlZZscsiF')
+</script>
+<script src="sendEmail.js"></script>

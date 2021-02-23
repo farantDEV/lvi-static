@@ -10,6 +10,7 @@
         <link href="modal.css" rel="stylesheet">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
+        
         <title>La vie d'intérieur</title>
 
     </head>
@@ -69,9 +70,9 @@
                 <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
                 <div class="contact-form animate__animated animate__backInUp">
                     <p>Renseignez votre email pour recevoir des promotions exclusives</p>
-                    <form method="post" action="#" enctype="text/plain" id="emailForm" onsubmit="sendMail()">
-                        <input class="textarea" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
-                        <input class="form-btn" type="submit" value="Je veux !" />
+                    <form id="emailForm" >
+                         <input class="emailArea" name="user_email" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
+                        <input id="button" class="form-btn" type="submit" value="Je veux !"/>
                     </form>
                 </div>
                 
@@ -83,12 +84,17 @@
         <footer>
             <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
         </footer>
-        <script>
-            function sendMail(){
-	           document.getElementById('emailForm').action = "mailto:mail@exemple?subject=liste%20des%20utilisateurs&body=Inscrivez-moi" + document.getElementById('email').value;
-            }
-        </script>
+        
         <script src="modal.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+           (function(){
+              emailjs.init("user_NXMQ7YnAIYzxPlZZscsiF");
+           })();
+        </script>
+        <script src="sendEmail.js"></script>
     </body>
     
 </html>
