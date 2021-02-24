@@ -28,6 +28,7 @@ body, html{
 .navbar{
     display: flex;
     height: 11em;
+    cursor: url("assets/icon/toits.png"), pointer;
 }
 .icons{
     height: 25px;
@@ -64,6 +65,9 @@ body, html{
 
 .btn:hover {
     background-color: #fafafa;
+}
+.btn:focus {
+    outline: none;
 }
 
 .btn:active {
@@ -129,6 +133,7 @@ P{
 /*Promo*/
 .promo{
     border: solid 5px #FFD700;
+    border-radius: 20px;
     width: 600px;
     height: 270px;
     margin: auto;
@@ -145,6 +150,7 @@ img.circles{
     width: 100px;
 }
 .form-btn{
+    cursor: pointer;
     background-color: #DA291C;
     color: white;
     height: 30px;
@@ -153,6 +159,18 @@ img.circles{
     font-weight: bold;
     font-style: oblique;
     border: none;
+    border-radius: 0 20px 20px 0;
+    
+}
+.form-btn:hover{
+    background-color: #ffd700;
+    color: #DA291C;
+}
+.form-btn:focus{
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    outline: none;
     
 }
 Form{
@@ -166,6 +184,10 @@ Form{
     height: 30px;
     width: 270px;
     font-size: 17px;
+    border-radius: 20px 0 0 20px;
+}
+.emailArea:focus{
+    outline: none;
 }
 #email{
     text-align: center;

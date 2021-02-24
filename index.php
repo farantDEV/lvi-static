@@ -18,11 +18,15 @@
         <header>
             <nav class="navbar">
                 <div class="container ronds">
-                    <button class="email-icon btn animate__animated animate__fadeIn" type="button">
-                        <img src="assets/icon/mail.svg" alt="email icon" class="icons">
+                    <button class="email-icon btn animate__animated animate__fadeIn" type="button" >
+                        <a href="admin/mailto.php">
+                            <img src="assets/icon/mail.svg" alt="email icon" class="icons">
+                        </a>
                     </button>
                     <button class="phone-icon btn animate__animated animate__fadeIn" type="button">
-                        <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
+                        <a href="admin/phoneto.php">
+                            <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
+                        </a>
                     </button>
                     <button data-modal="#modal-youtube" class="media-icon btn animate__animated animate__fadeIn" type="button">
                         <img src="assets/icon/media.svg" alt="media icon" class="icons">
@@ -95,6 +99,11 @@
            })();
         </script>
         <script src="sendEmail.js"></script>
+        <script type=text/javascript> var name = "dupont" ;     var domain = "spam.com" ; var subject =             "subject=Anti spam" ; 
+         function contactMail(){   
+        document.write('<a href="mailto:' + name + '@' + domain + ' ?' + subject + '">') ; document.write(name + '@' + domain + '</a>') ;
+         }
+        </script>
     </body>
     
 </html>
