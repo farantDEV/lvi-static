@@ -34,15 +34,18 @@ body, html{
     height: 25px;
     width: 25px;
 }
-.email-icon.btn{
+.gift-icon.btn{
     background-color: #012169;
     animation-name: fadeIn;
     animation-delay: 1s;
 }
-.phone-icon.btn{
+.phone-icon.btn, .email-icon.btn{
     background-color: #da291c;
     animation-name: fadeIn;
     animation-delay: 2s;
+}
+.phone-icon.btn{
+    display: none;
 }
 .media-icon.btn{
     background-color: #ffd700;
@@ -236,6 +239,12 @@ a{
         display: grid;
                 
     }
+    .phone-icon.btn{
+    display: inline;
+    }
+    .email-icon.btn{
+    display: none;
+    }
     .container.ronds{
         position: relative;
     }
@@ -245,7 +254,7 @@ a{
     .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
     
-}
+    }
     H1{
         font-size: 21px;
         padding-top: 29%;

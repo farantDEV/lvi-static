@@ -3,36 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Organisation et décoration de la maison">
+        <meta name="description" content="Bien chez soi, bien en soi: Nous vous offrons un diagnostic personnalisé de votre maison ">
         
-        <link rel="icon" type="image/svg" href="assets/favicon/toits-lvi.svg">
+        <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
         <link href="style.css" rel="stylesheet">
         <link href="modal.css" rel="stylesheet">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         
         
-        <title>La vie d'intérieur</title>
+        <title>La vie d'intérieur | Organisation et décoration de la maison</title>
 
     </head>
     <body>
         <header>
             <nav class="navbar">
                 <div class="container ronds">
-                    <button class="email-icon btn animate__animated animate__fadeIn" type="button" >
-                        <a href="admin/mailto.php">
-                            <img src="assets/icon/mail.svg" alt="email icon" class="icons">
-                        </a>
+                    <button class="gift-icon btn animate__animated animate__fadeIn" type="button" >
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;"><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
                     </button>
                     <button class="phone-icon btn animate__animated animate__fadeIn" type="button">
                         <a href="admin/phoneto.php">
                             <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
                         </a>
                     </button>
+                    <button class="email-icon btn animate__animated animate__fadeIn" type="button">
+                        <a href="admin/mailto.php">
+                            <img src="assets/icon/mail.svg" alt="email icon" class="icons">
+                        </a>
+                    </button>
                     <button data-modal="#modal-youtube" class="media-icon btn animate__animated animate__fadeIn" type="button">
                         <img src="assets/icon/media.svg" alt="media icon" class="icons">
                     </button>
+                    
                 </div>
                 <img src="assets/logo/logolvi+rd.svg" class="logo">
+                
              </nav>
         </header>
         <div class="modal" data-modal-window id="modal-youtube">
@@ -67,6 +73,7 @@
                 <h2 class="bcs animate__animated animate__backInUp">Le corps est la demeure 
                     de l’âme Comme la maison 
                     est celle du corps.</h2>
+                
             </div>
             
             <div class="promo">
@@ -104,6 +111,7 @@
         document.write('<a href="mailto:' + name + '@' + domain + ' ?' + subject + '">') ; document.write(name + '@' + domain + '</a>') ;
          }
         </script>
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </body>
     
 </html>
