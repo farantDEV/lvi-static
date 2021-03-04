@@ -4,14 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Bien chez soi, bien en soi: Nous vous offrons un diagnostic personnalisé de votre maison ">
-        
+
         <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
         <link href="style.css" rel="stylesheet">
         <link href="modal.css" rel="stylesheet">
         <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-        
-        
+
+
         <title>La vie d'intérieur | Organisation et décoration de la maison</title>
 
     </head>
@@ -35,11 +35,11 @@
                     <button data-modal="#modal-youtube" class="media-icon btn animate__animated animate__fadeIn" type="button">
                         <img src="assets/icon/media.svg" alt="media icon" class="icons">
                     </button>
-                    
+
                 </div>
-                
+
                 <img src="assets/logo/logolvi+rd.svg" class="logo">
-                
+
              </nav>
         </header>
         <div class="modal" data-modal-window id="modal-youtube">
@@ -65,30 +65,31 @@
                         <img class="logo-rs" src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
                     </a>
                 </div>
-                
+
             </div>
         </div>
         <main class="hero">
             <div class="hero-text">
                 <h1 class="animate__animated animate__fadeInLeft"><span class="bcs ">Bien chez soi ,</span> <span class="bes animate__animated animate__fadeIn">bien en soi !</span></h1>
                 <h2 class="bcs animate__animated animate__backInUp">Nouveaux services en ligne disponibles prochainement.</h2>
-                
+
             </div>
-            
-            <div class="promo">
-                <h3 class="animate__animated animate__flipInX">Le corps est la demeure 
-                    de l’âme, comme la maison 
-                    est celle du corps.</h3>
-                <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
-                <div class="contact-form animate__animated animate__backInUp">
-                    <p><b>ÉTAPE 1:</b> Votre diagnostic personnalisé OFFERT </p>
-                    <button class="calendar-icon btn animate__animated animate__fadeIn" type="button" >
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt">Réservez</a>
-                    </button>
-                    
-                </div>
-                
-            </div>
+            <div class="bk-promo">
+              <div class="promo">
+                  <h3 class="animate__animated animate__flipInX">Le corps est la demeure
+                      de l’âme, comme la maison
+                      est celle du corps.</h3>
+                  <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
+                  <div class="contact-form animate__animated animate__backInUp">
+                      <p><b>ÉTAPE 1:</b> Votre diagnostic personnalisé OFFERT </p>
+                      <button class="calendar-icon btn animate__animated animate__fadeIn" type="button" >
+                          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt">Réservez</a>
+                      </button>
+
+                  </div>
+
+              </div>
+          </div>
         </main>
         <aside class="contact">
             <a href="" class="link">CGU</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
@@ -96,9 +97,9 @@
         <footer>
             <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
         </footer>
-        
+
         <script src="modal.js"></script>
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </body>
-    
+
 </html>

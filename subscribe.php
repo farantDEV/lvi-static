@@ -20,7 +20,7 @@
 
             <form id="singular-form">
 
-                <button class="shown" type="button" id="trigger">J'en profite !</button>
+                <button class="shown" type="button" id="trigger">Je veux !</button>
 
                 <div id="input-container">
                     <input id="u-mail" name="user_email" type="text" placeholder="E-mail">
@@ -30,9 +30,13 @@
                 <div id="success">Merci !</div>
 
             </form>
-            <p class="text-promo" id="backLink"> <a href="index.php">Accueil</a>
-        </p>
+
         </div>
+        <div class="text-promo" id="backHome">
+            <p>Vous allez être redirigé vers la page d'accueil, si ce n'est pas le cas cliqué <a href="http://localhost/lvi-static/">ICI</a>
+            </p>
+        </div>
+
         <script src="button.js"></script>
         <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
@@ -43,6 +47,7 @@
            })();
         </script>
         <script src="sendEmail.js"></script>
+        <script src="hide.js"></script>
 
     </body>
 </html>

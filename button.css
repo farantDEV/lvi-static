@@ -2,7 +2,7 @@
     font-family: homemadeapple;
     src: url(assets/font/hma/hma.ttf);
 }
-@font-face{   
+@font-face{
     font-family: champagneandlimousines;
     src: url(assets/font/champ/cl.ttf);
 }
@@ -35,10 +35,11 @@ body,
     font-size: 1.5rem;
     text-align: center;
     width: 25rem;
-    
+
 }
-#backLink{
-    
+#backHome{
+    visibility: hidden;
+    color: #ffd700;
 }
 .container {
     width: 19rem;
@@ -148,4 +149,24 @@ body,
 .container>#singular-form>#input-container>input.shown {
     transform: scale(1);
     opacity: 1;
+}
+#trigger.shown{
+  font-family: 'homemadeapple', cursive;
+  font-weight: bold;
+}
+/*Responsive*/
+@media screen and (max-width: 575.98px){
+  .text-promo{
+    width: 20rem;
+  }
+  .container{
+    width: 21rem !important;
+    height: 5rem;
+  }
+  #button.shown{
+    width: 6rem !important;
+  }
+  #u-mail.shown{
+    font-size: 1.2rem !important;
+  }
 }

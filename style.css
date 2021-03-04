@@ -15,14 +15,14 @@
     font-family: 'champagneandlimousines-bold';
     src: url(assets/font/champ/clb.ttf);
 }
- @font-face{   
+ @font-face{
     font-family: 'champagneandlimousines';
     src: url(assets/font/champ/cl.ttf);
 }
 
 html, body{
     font-family: "champagneandlimousines", sans-serif;
-    
+
 }
 footer{
     height: 2rem;
@@ -31,12 +31,12 @@ footer{
 /*navbar*/
 .navbar{
     display: flex;
-    height: 11em;
+    height: 9em;
     cursor: url("assets/icon/toits.png"), pointer;
 }
 .icons{
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
 }
 .gift-icon.btn{
     background-color: #012169;
@@ -58,15 +58,15 @@ footer{
 }
 .btn {
     border: 0;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     border-radius: 25px;
-    
+
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
-    
+
 }
 
 .btn:hover {
@@ -81,12 +81,14 @@ footer{
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 img.logo{
-    height: 290px;
+    height: 240px;
     margin-left: auto;
     margin-right: auto;
 }
 .container.ronds{
    position: absolute;
+   margin: 3%;
+   width: 20rem;
 }
 
 /*text*/
@@ -105,7 +107,7 @@ H2{
     opacity: 1;
     animation-name: backInUp;
     animation-delay: 2s;
-        
+
 }
 H3{
     font-family: "champagneandlimousines", sans-serif;
@@ -133,24 +135,27 @@ P{
     background-size:contain;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;    
+    background-attachment: fixed;
 }
 
 /*Promo*/
 .promo{
-    border: solid 5px #FFD700;
+    border: solid 1px #fff;
     border-radius: 20px;
-    width: 600px;
-    height: 270px;
-    margin: auto;
+    position: absolute;
+    width: 590px;
+    height: 260px;
+    margin: 5px;
     background-color: white;
     text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
-                0 2px 2px rgba(0,0,0,0.11), 
-                0 4px 4px rgba(0,0,0,0.11), 
-                0 8px 8px rgba(0,0,0,0.11), 
-                0 16px 16px rgba(0,0,0,0.11), 
-                0 32px 32px rgba(0,0,0,0.11);
+
+}
+.bk-promo{
+  background: linear-gradient(to right, #d4af37, #ffd700, #fcf6ba, #ffd700, #d4af37);
+  width: 602px;
+  height: 272px;
+  margin: auto;
+  border-radius: 20px;
 }
 img.circles{
     width: 100px;
@@ -158,10 +163,11 @@ img.circles{
 
 .calendar-icon.btn{
     width: 11rem;
+    height: 3rem;
     background-color: #da291c;
 }
 .calendar-icon.icons{
-   padding-right: 3%; 
+   padding-right: 3%;
 }
 a.icon-txt{
     font-size: 1.3rem;
@@ -211,7 +217,7 @@ a{
 @media screen and (max-width: 575.98px){
     .navbar{
         display: grid;
-                
+        height: 12em;
     }
     .phone-icon.btn{
     display: inline;
@@ -227,7 +233,7 @@ a{
     }
     .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
-    
+
     }
     H1{
         font-size: 21px;
@@ -242,6 +248,10 @@ a{
         width: 300px;
         height: 380px;
         padding-top: 10%;
+    }
+    .bk-promo{
+      width: 312px;
+      height: 428px;
     }
     img.circles{
         margin: 5% 0 5% 0;
@@ -278,7 +288,7 @@ a{
     .hero{
         height: 80vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/tab-bg.jpg);
-    
+
     }
     H1{
         font-size: 42px;
@@ -291,7 +301,7 @@ a{
     aside.contact{
         text-align: center;
     }
-        
+
 }
 @media (min-width:768px){
     a.nok-link{

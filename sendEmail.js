@@ -1,5 +1,5 @@
 document.getElementById('singular-form')
- .addEventListener('submit', function(event) {
+.addEventListener('submit', function(event) {
    event.preventDefault();
 
    const serviceID = 'default_service';
@@ -8,6 +8,7 @@ document.getElementById('singular-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
 
+    
       setTimeout(function(){
         window.location.href = 'http://localhost/lvi-static/';
       }, 1500);
