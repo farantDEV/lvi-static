@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <div class="container ronds">
                     <button class="gift-icon btn animate__animated animate__fadeIn" type="button" >
-                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;"><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
+                        <a href="subscribe.php" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
                     </button>
                     <button class="phone-icon btn animate__animated animate__fadeIn" type="button">
                         <a href="admin/phoneto.php">
@@ -37,12 +37,13 @@
                     </button>
                     
                 </div>
+                
                 <img src="assets/logo/logolvi+rd.svg" class="logo">
                 
              </nav>
         </header>
         <div class="modal" data-modal-window id="modal-youtube">
-            <iframe class="media-player" src="https://www.youtube.com/embed/CRS6yABFKBo" frameborder="0" allowfullscreen></iframe>
+            <iframe class="media-player" src="https://www.youtube.com/embed/hqUCqu3X1r0" frameborder="0" allowfullscreen></iframe>
             <button data-modal-close>X</button>
             <div class="modal-text">
                 <img class="modal-logo-lvi" src="assets/logo/logo-LVI-alt-clr.svg" alt="logo la vie d'intérieur">
@@ -70,21 +71,21 @@
         <main class="hero">
             <div class="hero-text">
                 <h1 class="animate__animated animate__fadeInLeft"><span class="bcs ">Bien chez soi ,</span> <span class="bes animate__animated animate__fadeIn">bien en soi !</span></h1>
-                <h2 class="bcs animate__animated animate__backInUp">Le corps est la demeure 
-                    de l’âme Comme la maison 
-                    est celle du corps.</h2>
+                <h2 class="bcs animate__animated animate__backInUp">Nouveaux services en ligne disponibles prochainement.</h2>
                 
             </div>
             
             <div class="promo">
-                <h3 class="animate__animated animate__flipInX">Nouveaux services en ligne disponibles prochainement</h3>
+                <h3 class="animate__animated animate__flipInX">Le corps est la demeure 
+                    de l’âme, comme la maison 
+                    est celle du corps.</h3>
                 <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
                 <div class="contact-form animate__animated animate__backInUp">
-                    <p>Renseignez votre email pour recevoir des promotions exclusives</p>
-                    <form id="emailForm" >
-                         <input class="emailArea" name="user_email" value="Entrez votre email" type="email" id="email" onfocus="if(this.value == 'Entrez votre email')this.value = '';" />
-                        <input id="button" class="form-btn" type="submit" value="Je veux !"/>
-                    </form>
+                    <p><b>ÉTAPE 1:</b> Votre diagnostic personnalisé OFFERT </p>
+                    <button class="calendar-icon btn animate__animated animate__fadeIn" type="button" >
+                        <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt">Réservez</a>
+                    </button>
+                    
                 </div>
                 
             </div>
@@ -97,20 +98,6 @@
         </footer>
         
         <script src="modal.js"></script>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-           (function(){
-              emailjs.init("user_NXMQ7YnAIYzxPlZZscsiF");
-           })();
-        </script>
-        <script src="sendEmail.js"></script>
-        <script type=text/javascript> var name = "dupont" ;     var domain = "spam.com" ; var subject =             "subject=Anti spam" ; 
-         function contactMail(){   
-        document.write('<a href="mailto:' + name + '@' + domain + ' ?' + subject + '">') ; document.write(name + '@' + domain + '</a>') ;
-         }
-        </script>
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </body>
     

@@ -1,22 +1,22 @@
 /*Fonts*/
 @font-face{
-    font-family: 'audrey';
+    font-family: audrey;
     src: url(assets/fonts/ad/adb.otf);
 }
 @font-face{
-    font-family: 'homemadeapple';
+    font-family: homemadeapple;
     src: url(assets/font/hma/hma.ttf);
 }
 @font-face{
-    font-family: 'audrey-bold';
+    font-family: audrey-bold;
     src: url(assets/font/ad/ad.otf);
 }
 @font-face{
-    font-family: 'champagneandlimousines-bold';
+    font-family: champagneandlimousines-bold;
     src: url(assets/font/champ/clb.ttf);
 }
  @font-face{   
-    font-family: 'champagneandlimousines';
+    font-family: champagneandlimousines;
     src: url(assets/font/champ/cl.ttf);
 }
 
@@ -66,7 +66,8 @@ footer{
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
-    
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .btn:hover {
@@ -164,9 +165,9 @@ img.circles{
    padding-right: 3%; 
 }
 a.icon-txt{
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     color: #fff;
-    font-family: "Homemade Apple", sans-serif;
+    font-family: "champagneandlimousines", sans-serif;
     font-weight: bold;
 }
 a{

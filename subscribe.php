@@ -5,16 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Bien chez soi, bien en soi: Recevez nos offres de Promotions">
         <link href="button.css" rel="stylesheet">
-        <link rel="icon" type="image/svg" href="../assets/favicon/fav3.svg">
-        
-        
+        <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
+
+
         <title>La vie d'intérieur | Inscriptions</title>
-        
+
     </head>
     <body>
-        <a href="#" class="text-promo" id="backLink">Retour</a>
+
         <div class="text-promo">
-            <p>Renseignez votre email pour recevoir des promotions exclusives.</p>
+            <p>Renseignez votre email pour recevoir des promotions exclusives</p>
         </div>
         <div class="container">
 
@@ -23,13 +23,15 @@
                 <button class="shown" type="button" id="trigger">J'en profite !</button>
 
                 <div id="input-container">
-                    <input name="user_email" type="text" placeholder="E-mail">
+                    <input id="u-mail" name="user_email" type="text" placeholder="E-mail">
                     <button id="button" type="submit">Envoyer</button>
                 </div>
 
-                <div id="success">Merci!</div>
+                <div id="success">Merci !</div>
 
             </form>
+            <p class="text-promo" id="backLink"> <a href="index.php">Accueil</a>
+        </p>
         </div>
         <script src="button.js"></script>
         <script type="text/javascript"
@@ -41,6 +43,6 @@
            })();
         </script>
         <script src="sendEmail.js"></script>
-        
+
     </body>
 </html>
