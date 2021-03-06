@@ -169,10 +169,22 @@ img.circles{
     width: 11rem;
     height: 3rem;
     background-color: #da291c;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(212,175,55,0.7);
+    animation: shadow-pulse 2s infinite;
 }
-.calendar-icon.icons{
-   padding-right: 3%;
+.calendar-icon.btn:hover{
+  animation: none;
 }
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(212, 175, 55, 0.7);
+     }
+     100% {
+          box-shadow: 0 0 0 20px rgba(255, 215, 0, 0);
+     }
+}
+
 a.icon-txt{
     font-size: 1.3rem;
     color: #fff;
