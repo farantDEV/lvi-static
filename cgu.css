@@ -1,0 +1,74 @@
+/*Fonts*/
+@font-face{
+    font-family: 'champagneandlimousines';
+    src: url(assets/font/champ/cl.ttf);
+}
+
+body,html{
+  font-family: "champagneandlimousines", sans-serif;
+  font-size: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #012169;
+  margin: 0;
+}
+
+img.logo{
+  height: 17rem;
+}
+.logo-container{
+  position: fixed;
+  background-color: #fff;
+}
+.txt-container{
+  margin-top: 25rem;
+}
+footer, .container, .contact{
+  align-self: center;
+  text-align: center;
+  width: 50%;
+}
+p{
+  margin: auto 9rem;
+}
+h3{
+  color: #da291c;
+}
+h1{
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #da291c;
+}
+.contact{
+  margin-top: 3rem;
+}
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Responsive*/
+/*Phone (portrait less than 576px)*/
+@media screen and (max-width: 575.98px){
+  footer, .contact, .container{
+    width: 100%;
+  }
+  img.logo{
+    height: 15rem;
+  }
+  p{
+    margin: auto 3rem;
+  }
+  .txt-container{
+    margin-top: 20rem;
+  }
+}
+/*Tablettes (less than 768px)*/
+@media (min-width: 768px) and (max-width: 1199.98px){
+  footer, .contact, .container{
+    width: 100%;
+  }
+  .txt-container{
+    margin-top: 23rem;
+  }
+}

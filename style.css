@@ -29,10 +29,15 @@ footer{
 }
 
 /*navbar*/
+/*navbar height edit in js file*/
 .navbar{
     display: flex;
     height: 9em;
     cursor: url("assets/icon/toits.png"), pointer;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
 }
 .icons{
     height: 20px;
@@ -40,28 +45,25 @@ footer{
 }
 .gift-icon.btn{
     background-color: #012169;
-    animation-name: fadeIn;
-    animation-delay: 1s;
+
 }
 .phone-icon.btn, .email-icon.btn{
     background-color: #da291c;
-    animation-name: fadeIn;
-    animation-delay: 2s;
+
 }
 .phone-icon.btn{
     display: none;
 }
 .media-icon.btn{
     background-color: #ffd700;
-    animation-name: fadeIn;
-    animation-delay: 3s;
+
 }
 .btn {
     border: 0;
     height: 40px;
     width: 40px;
     border-radius: 25px;
-
+    margin-left: 1.3rem;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -90,6 +92,10 @@ img.logo{
    margin: 3%;
    width: 20rem;
 }
+/*Trandition onscroll*/
+#logobar, #lvi, #rd-container{
+  transition: 0.7s;
+}
 
 /*text*/
 H1{
@@ -98,15 +104,14 @@ H1{
     margin-top: 3px;
     font-size: 55px;
     padding-top: 10%;
-    animation-name: fadeInLeft;
+
 }
 H2{
     font-weight: bold;
     font-size: 25px;
     margin: 3px 35%;
     opacity: 1;
-    animation-name: backInUp;
-    animation-delay: 2s;
+
 
 }
 H3{
@@ -115,8 +120,6 @@ H3{
     font-size: 25px;
     margin: 5%;
     text-transform: uppercase;
-    animation-name: flipInX;
-    animation-delay: 6s;
     font-weight: bold;
 }
 P{
@@ -136,6 +139,7 @@ P{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    margin-top: 7rem;
 }
 
 /*Promo*/
@@ -181,36 +185,6 @@ a{
     color: #012169;
     font-size: 10px
 }
-/*Animation cf H1*/
-/*Text*/
-.bes{
-    animation: fadeIn;
-    animation-delay: 3s;
-}
-.contact-form{
-    animation-name: backInUp;
-    animation-delay: 6s;
-}
-
-
-.animate__animated.animate__backInUp {
-  --animate-duration: 5s;
-}
-.animate__animated.animate__fadeInLeft {
-  --animate-duration: 3s;
-}
-.animate__animated.animate__fadeIn {
-  --animate-duration: 5s;
-}
-.animate__animated.animate__fliInX {
-  --animate-duration: 5s;
-}
-.animate__animated.animate__heartBeat {
-  --animate-duration: 3s;
-}
-
-
-
 
 /*Responsive*/
 /*Phone (portrait less than 576px)*/
@@ -227,13 +201,15 @@ a{
     }
     .container.ronds{
         position: relative;
+        display: flex;
+        justify-content: center;
     }
     img.logo{
         height: 210px;
     }
     .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
-
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
+      margin-top: 12rem;
     }
     H1{
         font-size: 21px;
