@@ -27,17 +27,22 @@ html, body{
 footer{
     height: 2rem;
 }
+header{
+  display: flex;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  height: 12rem;
+  top: 0;
+}
 
 /*navbar*/
 /*navbar height edit in js file*/
 .navbar{
-    display: flex;
-    height: 9em;
-    cursor: url("assets/icon/toits.png"), pointer;
-    position: fixed;
-    background-color: #fff;
-    width: 100%;
-    top: 0;
+    margin: 3.5rem 0;
+    height: 60px;
+    z-index: 2;
+
 }
 .icons{
     height: 20px;
@@ -45,11 +50,11 @@ footer{
 }
 .gift-icon.btn{
     background-color: #012169;
-
+    margin-right: 1.3rem;
 }
 .phone-icon.btn, .email-icon.btn{
     background-color: #da291c;
-
+    margin-right: 1.3rem;
 }
 .phone-icon.btn{
     display: none;
@@ -63,7 +68,7 @@ footer{
     height: 40px;
     width: 40px;
     border-radius: 25px;
-    margin-left: 1.3rem;
+
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -83,14 +88,15 @@ footer{
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 img.logo{
-    height: 240px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 27rem;
+    position: absolute;
+    left: 35%;
+    z-index: 1;
 }
 .container.ronds{
-   position: absolute;
+   /*position: absolute;
    margin: 3%;
-   width: 20rem;
+   width: 20rem;*/
 }
 /*Trandition onscroll*/
 #logobar, #lvi, #rd-container{
@@ -202,9 +208,9 @@ a{
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){
     .navbar{
-        display: grid;
-        height: 12em;
+      margin: 0.5rem;
     }
+
     .phone-icon.btn{
     display: inline;
     }
@@ -217,7 +223,9 @@ a{
         justify-content: center;
     }
     img.logo{
-        height: 210px;
+        width: 20rem;
+        left: 5%;
+        top: 29%;
     }
     .hero{
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
@@ -265,13 +273,15 @@ a{
 /*Tablettes (less than 768px)*/
 @media (min-width: 768px) and (max-width: 1199.98px){
     .navbar{
-        height: 9em;
+        margin: 1.5rem 0;
     }
-    .container.ronds{
-        width: 200px;
+    header{
+      height: 14rem;
     }
+
     img.logo{
-        height: 230px;
+        left: 20%;
+        top: 15%;
     }
     .hero{
         height: 80vh;

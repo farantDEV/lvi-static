@@ -1,0 +1,42 @@
+
+img.activator {
+
+
+}
+
+ul {
+    list-style-type: none;
+
+    display: flex;
+}
+
+nav {
+
+    border-radius: 0 5em 5em 0;
+
+    clip-path: ellipse(50% 50% at -50% 50%);
+
+    }
+.activator-btn{
+  margin: 3.5rem 0rem 3.5rem 3.5rem;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 5px 3px #d4af37;
+  z-index: 3;
+}
+
+
+/*Phone (portrait less than 576px)*/
+@media screen and (max-width: 575.98px){
+  .activator-btn{
+    margin: 0.5rem!important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+  .activator-btn{
+    margin: 1rem 0;
+  }
+}

@@ -8,6 +8,7 @@
         <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
         <link href="style.css" rel="stylesheet">
         <link href="modal.css" rel="stylesheet">
+        <link href="test.css" rel="stylesheet">
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 
@@ -16,30 +17,33 @@
     </head>
     <body>
         <header>
-            <nav class="navbar" id="logobar">
-                <div class="container ronds" id="rd-container">
-                    <button class="gift-icon btn" type="button" >
-                        <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
-                    </button>
-                    <button class="phone-icon btn " type="button">
-                        <a href="admin/phoneto.php">
-                            <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
-                        </a>
-                    </button>
-                    <button class="email-icon btn " type="button">
-                        <a href="admin/mailto.php">
-                            <img src="assets/icon/mail.svg" alt="email icon" class="icons">
-                        </a>
-                    </button>
-                    <button data-modal="#modal-youtube" class="media-icon btn " type="button">
-                        <img src="assets/icon/media.svg" alt="media icon" class="icons">
-                    </button>
+          <div class="activator-btn">
+            <img class="activator container ronds" id="activator" src="assets/favicon/fav3.svg" alt="">
+          </div>
+          <nav class="navbar" id="logobar">
+            <ul class="container ronds" id="rd-container">
+                <li><button class="gift-icon btn" type="button" >
+                    <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
+                </button>
+               </li>
+                <li><button class="phone-icon btn " type="button">
+                    <a href="admin/phoneto.php">
+                        <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
+                    </a>
+                </button></li>
+                <li><button class="email-icon btn " type="button">
+                    <a href="admin/mailto.php">
+                        <img src="assets/icon/mail.svg" alt="email icon" class="icons">
+                    </a>
+                </button></li>
+                <li><button data-modal="#modal-youtube" class="media-icon btn " type="button">
+                    <img src="assets/icon/media.svg" alt="media icon" class="icons">
+                </button>
+              </li>
 
-                </div>
-
-                <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
-
-             </nav>
+            </ul>
+           </nav>
+           <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
         </header>
         <div class="modal" data-modal-window id="modal-youtube">
             <iframe class="media-player" src="https://www.youtube.com/embed/hqUCqu3X1r0" frameborder="0" allowfullscreen></iframe>
@@ -96,6 +100,8 @@
         <footer>
             <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+        <script src="test.js"></script>
         <script src="anime.min.js"></script>
         <script src="modal.js"></script>
         <script src="scroll.js"></script>
