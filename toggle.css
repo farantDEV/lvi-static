@@ -1,6 +1,6 @@
 
 img.activator {
-
+  cursor: pointer;
 
 }
 
@@ -21,8 +21,8 @@ nav {
   margin: 3.5rem 0rem 3.5rem 3.5rem;
   padding: 0.8rem;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   box-shadow: 0 0 5px 3px #d4af37;
   z-index: 3;
 }
@@ -30,9 +30,9 @@ nav {
 
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){
-  .activator-btn{
+  /*.activator-btn{
     margin: 0.5rem!important;
-  }
+  }*/
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px){

@@ -39,8 +39,7 @@ header{
 /*navbar*/
 /*navbar height edit in js file*/
 .navbar{
-    margin: 3.5rem 0;
-    height: 60px;
+    margin: 3rem 0;
     z-index: 2;
 
 }
@@ -99,7 +98,7 @@ img.logo{
    width: 20rem;*/
 }
 /*Trandition onscroll*/
-#logobar, #lvi, #rd-container{
+#topBar, #lvi, #rd-container, #headerBtn, #logobar{
   transition: 0.7s;
 }
 
@@ -208,7 +207,7 @@ a{
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){
     .navbar{
-      margin: 0.5rem;
+      margin: 1rem 0;
     }
 
     .phone-icon.btn{
@@ -272,16 +271,15 @@ a{
 
 /*Tablettes (less than 768px)*/
 @media (min-width: 768px) and (max-width: 1199.98px){
-    .navbar{
-        margin: 1.5rem 0;
-    }
+
     header{
-      height: 14rem;
+      height: 12rem;
     }
 
     img.logo{
-        left: 20%;
+        left: 25%;
         top: 15%;
+        width: 23rem;
     }
     .hero{
         height: 80vh;
