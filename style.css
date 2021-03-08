@@ -30,77 +30,13 @@ footer{
 header{
   display: flex;
   position: fixed;
-  background-color: #fff;
+  z-index: 10;
   width: 100%;
-  height: 12rem;
+
   top: 0;
 }
 
-/*navbar*/
-/*navbar height edit in js file*/
-.navbar{
-    margin: 3rem 0;
-    z-index: 2;
 
-}
-.icons{
-    height: 20px;
-    width: 20px;
-}
-.gift-icon.btn{
-    background-color: #012169;
-    margin-right: 1.3rem;
-}
-.phone-icon.btn, .email-icon.btn{
-    background-color: #da291c;
-    margin-right: 1.3rem;
-}
-.phone-icon.btn{
-    display: none;
-}
-.media-icon.btn{
-    background-color: #ffd700;
-
-}
-.btn {
-    border: 0;
-    height: 40px;
-    width: 40px;
-    border-radius: 25px;
-
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-
-}
-
-.btn:hover {
-    background-color: #fafafa;
-}
-.btn:focus {
-    outline: none;
-}
-
-.btn:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-img.logo{
-    width: 27rem;
-    position: absolute;
-    left: 35%;
-    z-index: 1;
-}
-.container.ronds{
-   /*position: absolute;
-   margin: 3%;
-   width: 20rem;*/
-}
-/*Trandition onscroll*/
-#topBar, #lvi, #rd-container, #headerBtn, #logobar{
-  transition: 0.7s;
-}
 
 /*text*/
 H1{
@@ -165,6 +101,7 @@ P{
   height: 272px;
   margin: auto;
   border-radius: 20px;
+  display: none;
 }
 img.circles{
     width: 100px;
@@ -211,7 +148,7 @@ a{
     }
 
     .phone-icon.btn{
-    display: inline;
+    display: inline!important;
     }
     .email-icon.btn{
     display: none;
@@ -223,8 +160,14 @@ a{
     }
     img.logo{
         width: 20rem;
-        left: 5%;
-        top: 29%;
+        margin-top: 15rem;
+
+    }
+    #topBar{
+      height: 24rem;
+    }
+    #downSolid{
+      height: 29rem;
     }
     .hero{
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
@@ -272,13 +215,12 @@ a{
 /*Tablettes (less than 768px)*/
 @media (min-width: 768px) and (max-width: 1199.98px){
 
-    header{
+  /*  header{
       height: 12rem;
-    }
+    }*/
 
     img.logo{
-        left: 25%;
-        top: 15%;
+
         width: 23rem;
     }
     .hero{
