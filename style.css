@@ -36,8 +36,6 @@ header{
   top: 0;
 }
 
-
-
 /*text*/
 H1{
     font-family: "homemadeapple", sans-serif;
@@ -68,15 +66,17 @@ P{
     font-size: 25px;
     margin: 0 11% 2% 11%;
 }
+
 .hero-text {
   text-align: center;
-  margin-bottom: 80px;
+  padding-top: 15rem;
   color: #ffffff;
 }
+
 .hero{
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/dsk-bg.jpg);
-    background-size:contain;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(1,33, 105, 0.5)), url(assets/pic/dsk-bg2.jpg);
+    background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -222,6 +222,10 @@ a{
     img.logo{
 
         width: 23rem;
+
+    }
+    #downSolid{
+      height: 39rem;
     }
     .hero{
         height: 80vh;
