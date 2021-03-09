@@ -1,7 +1,44 @@
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+body {
+    margin: 0;
+    height: 100vh;
+    /*background: rgb(36,40,49);*/
+    color: white;
+    display: grid;
+    place-content: center;
+}
+
+header {
+    display: flex;
+
+
+}
+
+img {
+    width: 100%;
+    max-width: 45px;
+    background-color: blue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*img {
+    opacity: 0;
+    transform: translateX(-10px);
+}*/
+ul{
+    display: flex;
+
+
+}
+
+nav {
+    background: rgb(41,46,56);
+    border-radius: 0 5em 5em 0;
+    padding: .5em;
+    clip-path: ellipse(50% 50% at -50% 50%);
+
+
 }

@@ -3,10 +3,6 @@ var tl = gsap.timeline({defaults: {ease: "power2.inOut"}})
 
 var toggle = false;
 
-/*tl.to('.activator', {
-    background: '#fefefe',
-    'borderRadius': '5em 0 0 5em'
-});*/
 tl.to('nav', {
     'clipPath': 'ellipse(100% 100% at 50% 50%)'
 }, "-=.5")

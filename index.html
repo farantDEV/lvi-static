@@ -24,8 +24,9 @@
           </div>
           <nav class="navbar" id="logobar">
             <ul class="container ronds" id="rd-container">
-                <li><button class="gift-icon btn" type="button" >
-                    <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
+                <li>
+                <button data-modal="#modal-youtube" class="media-icon btn " type="button">
+                    <img src="assets/icon/media.svg" alt="media icon" class="icons">
                 </button>
                </li>
                 <li><button class="phone-icon btn " type="button">
@@ -38,8 +39,8 @@
                         <img src="assets/icon/mail.svg" alt="email icon" class="icons">
                     </a>
                 </button></li>
-                <li><button data-modal="#modal-youtube" class="media-icon btn " type="button">
-                    <img src="assets/icon/media.svg" alt="media icon" class="icons">
+                <li><button class="gift-icon btn" type="button" >
+                    <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
                 </button>
               </li>
               </ul>
@@ -47,6 +48,23 @@
         </div>
 
         <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
+        <div id="social-icon-container">
+          <button class="scl-icon btn " id="fcbIcon" type="button">
+              <a href="">
+                  <img src="assets/icon/fcb.svg" alt="facebook icon" class="icons">
+              </a>
+          </button>
+          <button class="scl-icon btn " id="lkdnIcon" type="button">
+              <a href="">
+                  <img src="assets/icon/lkdn.svg" alt="linkedin icon" class="icons">
+              </a>
+          </button>
+          <button class="scl-icon btn " id="itgmIcon" type="button">
+              <a href="">
+                  <img src="assets/icon/itgm.svg" alt="instagram icon" class="icons">
+              </a>
+          </button>
+        </div>
       </header>
       <div id="downSolid">
       </div>
@@ -80,27 +98,18 @@
         <main class="hero">
 
             <div class="hero-text">
-                <h1 class="bcsbes"><span class="bcs">Bien chez soi ,</span> <span class="bes">bien en soi !</span></h1>
-                <h2 class="bcs">Nouveaux services en ligne disponibles prochainement.</h2>
+
+                <h1>Bien chez soi, bien en soi !</h1>
 
             </div>
-            <div class="bk-promo">
-              <div class="promo">
-                  <h3>Le corps est la demeure
-                      de l’âme, comme la maison
-                      est celle du corps.</h3>
-                  <img class="circles" src="assets/logo/circles.gif" alt="animated circles logo LVI"/>
-                  <div class="contact-form">
-                      <p><b>ÉTAPE 1:</b> Votre diagnostic personnalisé OFFERT </p>
-                      <button class="calendar-icon btn" type="button" >
-                          <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt">Réservez</a>
-                      </button>
+            <button class="calendar-icon btn" type="button" >
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt"><span id="step1">Étape 1</span> </a>
+            </button>
 
-                  </div>
-
-              </div>
-          </div>
         </main>
+
+
+
         <aside class="contact">
             <a href="cgu.html" class="link">CGU</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
         </aside>

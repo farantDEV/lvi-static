@@ -39,10 +39,10 @@ header{
 /*text*/
 H1{
     font-family: "homemadeapple", sans-serif;
-    margin-bottom: 3px;
-    margin-top: 3px;
-    font-size: 55px;
-    padding-top: 10%;
+
+    font-size: 1.6rem;
+
+
 
 }
 H2{
@@ -68,70 +68,64 @@ P{
 }
 
 .hero-text {
-  text-align: center;
-  padding-top: 15rem;
+  text-align: right;
+  padding-top: 23rem;
+  padding-right: 15.3rem;
   color: #ffffff;
 }
 
 .hero{
-    height: 90vh;
+    height: 99vh;
    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(1,33, 105, 0.5)), url(assets/pic/dsk-bg2.jpg);
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin-top: 7rem;
+    display: grid;
+}
+#circleSide{
+  background-color: red;
+  height: 10rem;
 }
 
-/*Promo*/
-.promo{
-    border: solid 1px #fff;
-    border-radius: 20px;
-    position: absolute;
-    width: 590px;
-    height: 260px;
-    margin: 5px;
-    background-color: white;
-    text-align: center;
 
-}
-.bk-promo{
-  background: linear-gradient(to right, #d4af37, #ffd700, #fcf6ba, #ffd700, #d4af37);
-  width: 602px;
-  height: 272px;
-  margin: auto;
-  border-radius: 20px;
-  display: none;
-}
 img.circles{
     width: 100px;
 }
 
 .calendar-icon.btn{
-    width: 11rem;
-    height: 3rem;
-    background-color: #da291c;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(212,175,55,0.7);
+    width: 12rem;
+    height: 4rem;
+    background-color: #fff;
+
     animation: shadow-pulse 2s infinite;
+    margin: auto;
 }
 .calendar-icon.btn:hover{
   animation: none;
 }
+#step1{
+  border: solid 2px #d4af37;
+  border-radius: 30px;
+  padding: 0.5rem 2.4rem;
+}
+
 @keyframes shadow-pulse
 {
      0% {
-          box-shadow: 0 0 0 0px rgba(212, 175, 55, 0.7);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.7);
      }
      100% {
-          box-shadow: 0 0 0 20px rgba(255, 215, 0, 0);
+          box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
      }
 }
 
 a.icon-txt{
-    font-size: 1.3rem;
-    color: #fff;
-    font-family: "Homemade Apple", sans-serif;
+    font-size: 1.7rem;
+    color: #da291c;
+    font-family: "champagneandlimousines", sans-serif;
     font-weight: bold;
+    letter-spacing: 2px;
 }
 a{
     text-decoration: none;

@@ -47,12 +47,14 @@ function scrollFunction() {
     document.getElementById("lvi").style.width = "12rem";
     document.getElementById('logobar').style.margin ="-4rem 3rem";
     document.getElementById('headerBtn').style.margin ="1rem";
+    document.getElementById('social-icon-container').style.opacity ="1";
   } else {
     document.getElementById("topBar").style.height = "17rem";
     document.getElementById("downSolid").style.height = "29rem";
     document.getElementById("lvi").style.width = "40rem";
     document.getElementById('logobar').style.margin ="3rem 0";
-    document.getElementById('headerBtn').style.margin =" 20rem 50rem";
+    document.getElementById('headerBtn').style.margin =" 1rem 95rem";
+    document.getElementById('social-icon-container').style.opacity ="0";
   }
 }
 
