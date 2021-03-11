@@ -19,11 +19,14 @@
     font-family: 'champagneandlimousines';
     src: url(assets/font/champ/cl.ttf);
 }
-
+#allSite{
+  transition: 5s;
+}
 html, body{
     font-family: "champagneandlimousines", sans-serif;
 
 }
+
 footer{
     height: 2rem;
 }
@@ -37,7 +40,7 @@ header{
 }
 
 /*text*/
-H1{
+H2{
     font-family: "homemadeapple", sans-serif;
 
     font-size: 1.6rem;
@@ -45,11 +48,11 @@ H1{
 
 
 }
-H2{
+H1{
     font-weight: bold;
     font-size: 25px;
     margin: 3px 35%;
-    opacity: 1;
+    opacity: 0;
 
 
 }
@@ -76,7 +79,7 @@ P{
 
 .hero{
     height: 99vh;
-   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(1,33, 105, 0.5)), url(assets/pic/dsk-bg2.jpg);
+    background-image: linear-gradient(rgba(212, 175, 55, 0.3), rgba(255, 255, 255, 0.3)), url(assets/pic/dsk-bg.jpg);
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -130,7 +133,7 @@ a.icon-txt{
 a{
     text-decoration: none;
     font-family: "audrey", sans-serif;
-    color: #012169;
+    color: #B0c4de;
     font-size: 10px
 }
 
@@ -152,11 +155,7 @@ a{
         display: flex;
         justify-content: center;
     }
-    img.logo{
-        width: 20rem;
-        margin-top: 15rem;
 
-    }
     #topBar{
       height: 24rem;
     }
@@ -164,17 +163,26 @@ a{
       height: 29rem;
     }
     .hero{
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/mob-bg.jpg);
-      margin-top: 12rem;
+      /*background-image: linear-gradient(rgba(1, 33, 105, 0.3), rgba(1, 33, 105, 0.7)), url(assets/pic/mob-bg.jpg);*/
+      margin-top: 7rem;
     }
-    H1{
-        font-size: 21px;
-        padding-top: 29%;
-        margin: 0 7% 3% 7%;
-   }
     H2{
-       margin: 0;
-        font-size: 18px;
+        font-size: 1rem;
+
+        line-height: 2.5rem;
+        margin: auto;
+   }
+    H1{
+        margin: auto;
+        font-size: 2.2rem;
+        letter-spacing: 0.2rem;
+        opacity: 1;
+    }
+    .hero-text{
+      text-align: center;
+      color: #fff;
+      padding-top: 7rem;
+      padding-right: 0;
     }
     .promo{
         width: 300px;
@@ -222,25 +230,37 @@ a{
       height: 39rem;
     }
     .hero{
-        height: 80vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/tab-bg.jpg);
+        height: 100vh;
+        /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/pic/tab-bg.jpg);*/
+
+    }
+    .hero-text{
+      text-align: center;
+      padding-top: 9rem;
+      padding-right: 0;
+    }
+    H2{
+        font-size: 30px;
+
 
     }
     H1{
-        font-size: 42px;
-        padding-top: 25%;
-        margin: 0 10% 0 10%;
-    }
-    H2{
         margin: 1% 25% 0 25%;
     }
     aside.contact{
         text-align: center;
     }
+    footer{
+      display: flex;
+    }
+    .nok-link{
+      margin: auto;
+
+    }
 
 }
-@media (min-width:768px){
+/*@media (min-width:768px){
     a.nok-link{
         float: right;
     }
-}
+}*/

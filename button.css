@@ -22,7 +22,12 @@ body {
     background-color: var(--accent-color);
     flex-direction: column;
 }
+a{
+    text-decoration: none;
 
+    color: #B0c4de;
+    font-size: 10px
+}
 body,
 #singular-form button,
 .container>#singular-form>#input-container>input {
@@ -34,12 +39,33 @@ body,
     color: var(--main-color);
     font-size: 1.5rem;
     text-align: center;
-    width: 25rem;
+    width: 100%;
 
+}
+.btn {
+    border: 0;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 2rem;
+    align-self: center
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 #backHome{
     visibility: hidden;
     color: #ffd700;
+    font-size: 1.9rem;
+}
+#contentBox{
+  display: flex;
+  flex-direction: column;
 }
 .container {
     width: 19rem;
@@ -50,6 +76,8 @@ body,
     border-radius: 3rem;
     overflow: hidden;
     transition: width .4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    align-self: center;
+    margin-top: 12rem;
 }
 
 .container>#singular-form {
@@ -157,11 +185,14 @@ body,
 /*Responsive*/
 @media screen and (max-width: 575.98px){
   .text-promo{
-    width: 20rem;
+    font-size: 2.2rem;
   }
   .container{
     width: 21rem !important;
     height: 5rem;
+  }
+  #contentBox{
+    flex-direction: column-reverse;
   }
   #button.shown{
     width: 6rem !important;

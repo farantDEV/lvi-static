@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+	document.getElementById('allSite').style.opacity = "1";
+
+});
+
 //rezise on scroll
 window.onload = resizeScreen;
 window.addEventListener("resize", resizeScreen);
@@ -5,38 +11,39 @@ window.addEventListener("resize", resizeScreen);
 //Resize
 function scrollFunctionOnPhone() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("topBar").style.height = "9.5rem";
+    document.getElementById("topBar").style.height = "4.5rem";
     document.getElementById("downSolid").style.height = "0";
-    document.getElementById("lvi").style.marginTop = "4rem";
-    document.getElementById("lvi").style.width = "12rem";
+    document.getElementById("lvi").style.marginTop = "0";
+    document.getElementById("lvi").style.width = "0";
     //document.getElementById('logobar').style.margin ="0";
     document.getElementById('headerBtn').style.margin ="0.5rem 0";
   } else {
     document.getElementById("topBar").style.height = "24rem";
-    document.getElementById("downSolid").style.height = "29rem";
+    document.getElementById("downSolid").style.height = "100%";
     document.getElementById("lvi").style.marginTop = "15rem";
     document.getElementById("lvi").style.width = "20rem";
     //document.getElementById('logobar').style.margin ="1rem 0";
-    document.getElementById('headerBtn').style.margin ="25rem 10rem";
+    document.getElementById('headerBtn').style.margin ="1rem 25rem";
   }
 }
 
 function scrollFunctionOnTab() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("topBar").style.height = "8rem";
+    document.getElementById("topBar").style.height = "6rem";
     document.getElementById("downSolid").style.height = "0";
     document.getElementById("lvi").style.marginTop = "0";
-    document.getElementById("lvi").style.width = "17rem";
+    document.getElementById("lvi").style.width = "13rem";
     //document.getElementById('logobar').style.margin ="0.5rem 0";
-    document.getElementById('headerBtn').style.margin ="1rem 0";
+    document.getElementById('headerBtn').style.margin ="1rem";
+		document.getElementById('social-icon-container').style.opacity ="1";
   } else {
     document.getElementById("topBar").style.height = "25rem";
-      document.getElementById("downSolid").style.height = "39rem";
+      document.getElementById("downSolid").style.height = "100%";
     document.getElementById("lvi").style.marginTop = "15rem";
     document.getElementById("lvi").style.width = "23rem";
     //document.getElementById('logobar').style.margin ="1rem 0";
-    document.getElementById('headerBtn').style.margin ="23rem";
-
+    document.getElementById('headerBtn').style.margin ="1rem 48rem";
+		  document.getElementById('social-icon-container').style.opacity ="0";
   }
 }
 
@@ -50,7 +57,7 @@ function scrollFunction() {
     document.getElementById('social-icon-container').style.opacity ="1";
   } else {
     document.getElementById("topBar").style.height = "17rem";
-    document.getElementById("downSolid").style.height = "29rem";
+    document.getElementById("downSolid").style.height = "100%";
     document.getElementById("lvi").style.width = "40rem";
     document.getElementById('logobar').style.margin ="3rem 0";
     document.getElementById('headerBtn').style.margin =" 1rem 95rem";

@@ -10,117 +10,109 @@
         <link href="modal.css" rel="stylesheet">
         <link href="toggle.css" rel="stylesheet">
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
+        <noscript>
+            <style>
+        	    body {
+        		    opacity: 1;
+        	    }
+            </style>
+        </noscript>
 
         <title>La vie d'intérieur | Organisation et décoration de la maison</title>
 
     </head>
     <body>
-
-      <header>
-        <div id="topBar">
-          <div class="activator-btn" id="headerBtn">
-            <img class="activator container ronds" id="activator" src="assets/favicon/fav3.svg" alt="">
+      <div id="allSite" style="opacity: 0">
+        <header>
+          <div id="topBar">
+            <div class="activator-btn" id="headerBtn">
+              <img class="activator container ronds" id="activator" src="assets/favicon/fav3.svg" alt="">
+            </div>
+            <nav class="navbar" id="logobar">
+              <ul class="container ronds" id="rd-container">
+                  <li>
+                  <button data-modal="#modal-youtube" class="media-icon btn " type="button" id="videoModal">
+                      <img src="assets/icon/media.svg" alt="media icon" class="icons">
+                  </button>
+                 </li>
+                  <li><button class="phone-icon btn " type="button">
+                      <a href="admin/phoneto.php">
+                          <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
+                      </a>
+                  </button></li>
+                  <li><button class="email-icon btn " type="button">
+                      <a href="admin/mailto.php">
+                          <img src="assets/icon/mail.svg" alt="email icon" class="icons">
+                      </a>
+                  </button></li>
+                  <li><button class="gift-icon btn" type="button" >
+                      <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
+                  </button>
+                </li>
+                </ul>
+             </nav>
           </div>
-          <nav class="navbar" id="logobar">
-            <ul class="container ronds" id="rd-container">
-                <li>
-                <button data-modal="#modal-youtube" class="media-icon btn " type="button">
-                    <img src="assets/icon/media.svg" alt="media icon" class="icons">
-                </button>
-               </li>
-                <li><button class="phone-icon btn " type="button">
-                    <a href="admin/phoneto.php">
-                        <img src="assets/icon/phone.svg" alt="phone icon" class="icons">
-                    </a>
-                </button></li>
-                <li><button class="email-icon btn " type="button">
-                    <a href="admin/mailto.php">
-                        <img src="assets/icon/mail.svg" alt="email icon" class="icons">
-                    </a>
-                </button></li>
-                <li><button class="gift-icon btn" type="button" >
-                    <a href="subscribe.html" ><img src="assets/icon/gift.svg" alt="gift icon" class="icons"></a>
-                </button>
-              </li>
-              </ul>
-           </nav>
+
+          <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
+          <div id="social-icon-container">
+            <button class="scl-icon btn " id="fcbIcon" type="button">
+                <a href="">
+                    <img src="assets/icon/fcb.svg" alt="facebook icon" class="icons">
+                </a>
+            </button>
+            <button class="scl-icon btn " id="lkdnIcon" type="button">
+                <a href="">
+                    <img src="assets/icon/lkdn.svg" alt="linkedin icon" class="icons">
+                </a>
+            </button>
+            <button class="scl-icon btn " id="itgmIcon" type="button">
+                <a href="">
+                    <img src="assets/icon/itgm.svg" alt="instagram icon" class="icons">
+                </a>
+            </button>
+          </div>
+        </header>
+        <div id="downSolid">
         </div>
 
-        <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
-        <div id="social-icon-container">
-          <button class="scl-icon btn " id="fcbIcon" type="button">
-              <a href="">
-                  <img src="assets/icon/fcb.svg" alt="facebook icon" class="icons">
-              </a>
-          </button>
-          <button class="scl-icon btn " id="lkdnIcon" type="button">
-              <a href="">
-                  <img src="assets/icon/lkdn.svg" alt="linkedin icon" class="icons">
-              </a>
-          </button>
-          <button class="scl-icon btn " id="itgmIcon" type="button">
-              <a href="">
-                  <img src="assets/icon/itgm.svg" alt="instagram icon" class="icons">
-              </a>
-          </button>
-        </div>
-      </header>
-      <div id="downSolid">
+          <div class="modal" data-modal-window id="modal-youtube">
+              <div id="modalPlayer">
+                <iframe class="media-player" src="https://www.youtube.com/embed/Tfsy1dystdo" frameborder="0" allowfullscreen></iframe>
+
+              </div>
+                <button data-modal-close class="btn close-btn">X</button>
+
+
+          </div>
+          <main class="hero">
+
+              <div class="hero-text">
+                  <h1>laviedinterieur.fr</h1>
+                  <h2>Bien chez vous, bien en vous !</h2>
+
+              </div>
+              <button class="calendar-icon btn" type="button" >
+                  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt"><span id="step1">Étape 1</span> </a>
+              </button>
+
+          </main>
+
+
+
+          <aside class="contact">
+              <a href="cgu.html" class="link">CGU</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
+          </aside>
+          <footer>
+              <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
+          </footer>
       </div>
 
-        <div class="modal" data-modal-window id="modal-youtube">
-            <iframe class="media-player" src="https://www.youtube.com/embed/hqUCqu3X1r0" frameborder="0" allowfullscreen></iframe>
-            <button data-modal-close>X</button>
-            <div class="modal-text">
-                <img class="modal-logo-lvi" src="assets/logo/logo-LVI-alt-clr.svg" alt="logo la vie d'intérieur">
-                <h2 class="discount">jusqu'a -50% de remise</h2>
-                <img class="modal-logo-rd" src="assets/logo/3rds.svg" alt="logo 3 ronds la vie d'intérieur">
-                <p class="discount">Bénéficiez d'une remise de 10% lorsque vous recommandez nos services à votre entourage, offre cumulable jusqu'à 5 fois. <a href="">Voir conditions</a></p><br/>
-                <p>Partagez sur vos réseaux</p>
-                <div id="share-buttons">
-                    <!-- Facebook -->
-                    <a href="http://www.facebook.com/sharer.php?u=https://nok-it.com" target="_blank">
-                        <img class="logo-rs" src="" alt="Facebook" />
-                    </a>
-                     <!-- LinkedIn -->
-                    <a  href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://nok-it.com" target="_blank">
-                        <img class="logo-rs" src="" alt="LinkedIn" />
-                    </a>
-                    <!-- Twitter -->
-                    <a href="https://twitter.com/share?url=https://nok-it.com&amp;text=La%20vie%20dinterieur&amp;hashtags=nok-it" target="_blank">
-                        <img class="logo-rs" src="" alt="Twitter" />
-                    </a>
-                </div>
-
-            </div>
-        </div>
-        <main class="hero">
-
-            <div class="hero-text">
-
-                <h1>Bien chez soi, bien en soi !</h1>
-
-            </div>
-            <button class="calendar-icon btn" type="button" >
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt"><span id="step1">Étape 1</span> </a>
-            </button>
-
-        </main>
-
-
-
-        <aside class="contact">
-            <a href="cgu.html" class="link">CGU</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
-        </aside>
-        <footer>
-            <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
-        </footer>
+        <script src="scroll.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
         <script src="toggle.js"></script>
         <script src="anime.min.js"></script>
         <script src="modal.js"></script>
-        <script src="scroll.js"></script>
+
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     </body>
 
