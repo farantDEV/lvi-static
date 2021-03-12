@@ -72,7 +72,7 @@ P{
 
 .hero-text {
   text-align: right;
-  padding-top: 23rem;
+  padding-top: 20rem;
   padding-right: 15.3rem;
   color: #ffffff;
 }
@@ -110,7 +110,7 @@ img.circles{
 #step1{
   border: solid 2px #d4af37;
   border-radius: 30px;
-  padding: 0.5rem 2.4rem;
+  padding: 0.5rem 2.2rem;
 }
 
 @keyframes shadow-pulse
@@ -135,6 +135,9 @@ a{
     font-family: "audrey", sans-serif;
     color: #B0c4de;
     font-size: 10px
+}
+a.link{
+  text-transform: uppercase;
 }
 
 /*Responsive*/
@@ -259,8 +262,8 @@ a{
     }
 
 }
-/*@media (min-width:768px){
+@media (min-width:768px){
     a.nok-link{
         float: right;
     }
-}*/
+}

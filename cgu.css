@@ -46,6 +46,39 @@ a{
   text-decoration: none;
   font-weight: bold;
 }
+ul {
+    list-style-type: none;
+
+}
+section{
+  padding-top:20rem;
+}
+/*collapse*/
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible.alt{
+  background-color: #fafafa;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  /*background-color: #f1f1f1;*/
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
 
 /*Responsive*/
 /*Phone (portrait less than 576px)*/

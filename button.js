@@ -48,14 +48,3 @@ sf.submitForm = () => {
 
 sf.input.addEventListener('keypress', (e) => sf.handleInputKeypress(e));
 document.addEventListener('click', (e) => sf.clickHandler(e));
-
-//home buttons
-var homeBtn = getElementById('homeBtn');
-var txtHome = getElementById('txtHomeBtn');
-var homeIcon = getElementById('homeIcon');
-
-homeBtn.addEventListener("mousseenter", function(event){
-document.homeBtn.style.width = "14rem";
-  document.homeIcon.style.display = "none";
-  document.txtHome.style.display = "inline";
-})

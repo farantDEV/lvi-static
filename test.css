@@ -1,44 +1,93 @@
-body {
-    margin: 0;
-    height: 100vh;
-    /*background: rgb(36,40,49);*/
-    color: white;
-    display: grid;
-    place-content: center;
-}
-
-header {
-    display: flex;
-
-
-}
-
-img {
-    width: 100%;
-    max-width: 45px;
-    background-color: blue;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-/*img {
-    opacity: 0;
-    transform: translateX(-10px);
+/*body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333;
 }*/
-ul{
-    display: flex;
 
-
+#containerScroll {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  margin: 32rem auto 0;
+  display: flex;
 }
 
-nav {
-    background: rgb(41,46,56);
-    border-radius: 0 5em 5em 0;
-    padding: .5em;
-    clip-path: ellipse(50% 50% at -50% 50%);
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
 
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
 
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  margin-top: 75px;
+  margin-left: -45px;
+  /*font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;*/
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .25;
+  animation: pulse 2s linear alternate infinite;
+}
+
+@keyframes pulse {
+  to {
+    opacity: 1;
+  }
 }

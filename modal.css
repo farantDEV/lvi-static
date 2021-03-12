@@ -33,7 +33,18 @@
   border: solid 5px #b0c4de;
   border-radius: 7rem;
   width: 58rem;
-
+  animation: bgMultiColor 50s 1;
+}
+@keyframes bgMultiColor{
+  0% {background-color: #fff;}
+  12% {background-color: #012169;}
+  18% {background-color: #fff;}
+  24% {background-color: #da291c;}
+  35% {background-color: #012169;}
+  50% {background-color: #012169;}
+  65% {background-color: #fff;}
+  70% {background-color: #012169;}
+  90% {background-color: #fff;}
 }
 .modal.active:focus{
   outline: none;
