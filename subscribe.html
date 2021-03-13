@@ -4,9 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Bien chez soi, bien en soi: Recevez nos offres de Promotions">
-        <link href="button.css" rel="stylesheet">
+        <link href="src/css/button.css" rel="stylesheet">
         <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
-
 
         <title>La vie d'intérieur | Inscriptions</title>
 
@@ -14,69 +13,44 @@
     <body>
       <div id="contentBox">
         <div class="container">
-
+          <!--Formulaire email-->
             <form id="singular-form">
-
                 <button class="shown" type="button" id="trigger">Je veux !</button>
-
                 <div id="input-container">
                     <input id="u-mail" name="user_email" type="text" placeholder="E-mail">
                     <button id="button" type="submit">Envoyer</button>
                 </div>
-
                 <div id="success">Merci !</div>
-
             </form>
-
         </div>
-      <!--  <div class="modal-text">
-
-            <h3 class="discount">jusqu'a -50% de remise</h3>
-            <img class="modal-logo-rd" src="assets/logo/3rds.svg" alt="logo 3 ronds la vie d'intérieur">
-            <p class="discount">Bénéficiez d'une remise de 10% lorsque vous recommandez nos services à votre entourage, offre cumulable jusqu'à 5 fois. <a href="">Voir conditions</a></p><br/>
-            <p>Partagez sur vos réseaux</p>
-            <div id="share-buttons"> -->
-                <!-- Facebook                 <a href="http://www.facebook.com/sharer.php?u=https://nok-it.com" target="_blank">
-                    <img class="logo-rs" src="" alt="Facebook" />
-                </a> -->
-                 <!-- LinkedIn
-                <a  href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://nok-it.com" target="_blank">
-                    <img class="logo-rs" src="" alt="LinkedIn" />
-                </a> -->
-                <!-- Twitter
-                <a href="https://twitter.com/share?url=https://nok-it.com&amp;text=La%20vie%20dinterieur&amp;hashtags=nok-it" target="_blank">
-                    <img class="logo-rs" src="" alt="Twitter" />
-                </a>
-            </div>
-
-        </div> -->
+        <!-- Message formulaire -->
         <div class="text-promo">
             <p>Renseignez votre email pour recevoir des promotions exclusives</p>
         </div>
+        <!-- annonce redirection-->
         <div class="text-promo" id="backHome">
-            <p>Vous allez être redirigé vers la page d'accueil, si ce n'est pas le cas cliqué <a href="http://localhost/lvi-static/">ICI</a>
+            <p>Vous allez être redirigé vers la page d'accueil, si ce n'est pas le cas cliqué
+              <a href="http://localhost/lvi-static/">ICI</a>
             </p>
         </div>
+        <!-- Bouton retour Home -->
         <button class=" btn " id="homeBtn" type="button">
             <a href="index.html">
                 <img src="assets/icon/home.svg" alt="home icon" class="icons">
-
             </a>
+        </button>
       </div>
-
-
-
-        <script src="button.js"></script>
-        <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-           (function(){
-              emailjs.init("user_NXMQ7YnAIYzxPlZZscsiF");
-           })();
-        </script>
-        <script src="sendEmail.js"></script>
-        <script src="button.js"></script>
-
+      <!-- script JS -->
+      <script src="src/js/button.js"></script>
+      <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+      </script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("user_NXMQ7YnAIYzxPlZZscsiF");
+         })();
+      </script>
+      <script src="src/js/sendEmail.js"></script>
+      <script src="src/js/button.js"></script>
     </body>
 </html>

@@ -1,3 +1,3 @@
 <?php
-header("Location: mailto:utilisateur@domaine.fr"); 
+header("Location: mailto:laviedinterieur@gmail.com");
 ?>

@@ -1,3 +1,3 @@
 <?php
-header("Location: phoneto:+33651571733"); 
+header("Location: phoneto:+33650108400");
 ?>

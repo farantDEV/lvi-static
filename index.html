@@ -6,11 +6,12 @@
         <meta name="description" content="Bien chez soi, bien en soi: Nous vous offrons un diagnostic personnalisé de votre maison ">
 
         <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg">
-        <link href="style.css" rel="stylesheet">
-        <link href="modal.css" rel="stylesheet">
-        <link href="toggle.css" rel="stylesheet">
-          <link href="test.css" rel="stylesheet">
+        <link href="src/css/style.css" rel="stylesheet">
+        <link href="src/css/modal.css" rel="stylesheet">
+        <link href="src/css/toggle.css" rel="stylesheet">
+          <link href="src/css/scrollDown.css" rel="stylesheet">
         <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <!--Pre-loader -->
         <noscript>
             <style>
         	    body {
@@ -19,16 +20,19 @@
             </style>
         </noscript>
 
-        <title>La vie d'intérieur | Organisation et décoration de la maison</title>
+        <title>La vie d'intérieur | Organisation et décoration de la maison (Lite version)</title>
 
     </head>
     <body>
       <div id="allSite" style="opacity: 0">
         <header>
+          <!-- bar boutons et logo -->
           <div id="topBar">
+            <!-- bouton toggle -->
             <div class="activator-btn" id="headerBtn">
               <img class="activator container ronds" id="activator" src="assets/favicon/fav3.svg" alt="">
             </div>
+            <!-- Contenu toggle (3 btn) -->
             <nav class="navbar" id="logobar">
               <ul class="container ronds" id="rd-container">
                   <li>
@@ -53,75 +57,69 @@
                 </ul>
              </nav>
           </div>
-
+          <!-- Logo -->
           <img src="assets/logo/logolvi+rd.svg" class="logo" id="lvi">
+          <!-- Social medias btn -->
           <div id="social-icon-container">
             <button class="scl-icon btn " id="fcbIcon" type="button">
-                <a href="">
+                <a href="https://www.facebook.com/La-Vie-DInt%C3%A9rieur-2112895318969261" target="_blank" rel="noopener">
                     <img src="assets/icon/fcb.svg" alt="facebook icon" class="icons">
                 </a>
             </button>
             <button class="scl-icon btn " id="lkdnIcon" type="button">
-                <a href="">
+                <a href="https://www.linkedin.com/in/claudia-joly-bellance-597082131/" target="_blank" rel="noopener">
                     <img src="assets/icon/lkdn.svg" alt="linkedin icon" class="icons">
                 </a>
             </button>
             <button class="scl-icon btn " id="itgmIcon" type="button">
-                <a href="">
+                <a href="" target="_blank" rel="noopener">
                     <img src="assets/icon/itgm.svg" alt="instagram icon" class="icons">
                 </a>
             </button>
           </div>
         </header>
+        <!-- scrolle Message et animation -->
         <div id="downSolid">
           <div id="containerScroll">
             <div class="chevron"></div>
             <div class="chevron"></div>
             <div class="chevron"></div>
             <span class="text">Scrollez pour entrer</span>
-
           </div>
         </div>
-
-          <div class="modal" data-modal-window id="modal-youtube">
-              <div id="modalPlayer">
-                <iframe class="media-player" src="https://www.youtube.com/embed/rw_KGvQTcbw" frameborder="0" allowfullscreen></iframe>
-
-              </div>
-                <button data-modal-close class="btn close-btn">X</button>
-
-
-          </div>
-          <main class="hero">
-
-              <div class="hero-text">
-                  <h1>laviedinterieur.fr</h1>
-                  <h2>Bien chez vous, bien en vous !</h2>
-
-              </div>
-              <button class="calendar-icon btn" type="button" >
-                  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt"><span id="step1">Étape 1</span> </a>
-              </button>
-
-          </main>
-
-
-
-          <aside class="contact">
-              <a href="cgu.html#about" class="link">A propos </a> | <a href="cgu.html#cgu" class="link"> CGU </a> | <a href="cgu.html#contact" class="link">  contact </a>| <a href="cgu.html#faq" class="link"> faq </a>
-          </aside>
-          <footer>
-              <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
-          </footer>
+        <!-- Video Modal -->
+        <div class="modal" data-modal-window id="modal-youtube">
+            <div id="modalPlayer">
+              <iframe class="media-player" src="https://www.youtube.com/embed/rw_KGvQTcbw" frameborder="0" allowfullscreen></iframe>
+            </div>
+              <button data-modal-close class="btn close-btn">X</button>
+        </div>
+          <!-- Bckground et message texte -->
+        <main class="hero">
+            <div class="hero-text">
+                <h1>laviedinterieur.fr</h1>
+                <h2>Bien chez vous, bien en vous !</h2>
+            </div>
+            <!-- Btn etape 1 -->
+            <button class="calendar-icon btn" type="button" >
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nokit/30min?text_color=012169&primary_color=da291c'});return false;" class="icon-txt"><span id="step1">Étape 1</span> </a>
+            </button>
+        </main>
+          <!-- Menu bas de page-->
+        <aside class="contact">
+            <a href="cgu.html#about" class="link">A propos </a> | <a href="cgu.html#cgu" class="link"> CGU </a> | <a href="cgu.html#contact" class="link">  contact </a>| <a href="cgu.html#faq" class="link"> faq </a>
+        </aside>
+          <!--Footer -->
+        <footer>
+            <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
+        </footer>
       </div>
-
-        <script src="scroll.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
-        <script src="toggle.js"></script>
-        <script src="anime.min.js"></script>
-        <script src="modal.js"></script>
-
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-    </body>
+      <!-- sript JS -->
+      <script src="src/js/scroll.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+      <script src="src/js/toggle.js"></script>
+      <script src="src/js/modal.js"></script>
+      <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  </body>
 
 </html>

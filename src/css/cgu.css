@@ -1,9 +1,8 @@
 /*Fonts*/
 @font-face{
     font-family: 'champagneandlimousines';
-    src: url(assets/font/champ/cl.ttf);
+    src: url(../../assets/font/champ/cl.ttf);
 }
-
 body,html{
   font-family: "champagneandlimousines", sans-serif;
   font-size: 100%;
@@ -12,7 +11,6 @@ body,html{
   color: #012169;
   margin: 0;
 }
-
 img.logo{
   height: 17rem;
 }
@@ -48,7 +46,6 @@ a{
 }
 ul {
     list-style-type: none;
-
 }
 section{
   padding-top:20rem;
@@ -72,14 +69,10 @@ section{
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  /*background-color: #f1f1f1;*/
 }
-
 .active, .collapsible:hover {
   background-color: #ccc;
 }
-
-
 /*Responsive*/
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){

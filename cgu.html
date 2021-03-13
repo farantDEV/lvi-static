@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Conditions générales du site " />
-    <link href="cgu.css" rel="stylesheet" />
+    <meta name="description" content="Informations générales du site laviedinterieur.fr" />
+    <link href="src/css/cgu.css" rel="stylesheet" />
     <link rel="icon" type="image/svg" href="assets/favicon/fav3.svg" />
 
-    <title>La vie d'intérieur | CGU</title>
+    <title>La vie d'intérieur | informations générales</title>
 
   </head>
   <body>
     <div class="logo-container container">
-      <a href="http://localhost/lvi-static/">
+      <a href="index.html">
         <img src="assets/logo/logolvi+rd.svg" class="logo">
       </a>
       <h4>Cliquez sur le logo pour revenir en page d'accueil</h4>
     </div>
     <div class="txt-container container">
-      <h1>Informations générales du site | v0.1 Light</h1>
+      <h1>Informations générales du site | v0.1 Lite</h1>
+      <!-- sommaire -->
       <h2>Sommaire</h2>
       <ul>
         <li>
@@ -40,22 +41,27 @@
           <a href="#licences">Licenses</a>
         </li>
       </ul>
+      <!-- Présentation -->
       <section id="about">
         <h2>A propos</h2>
         <h3>Présentation</h3>
         <P>
-          Bienvenue sur mon site laviedinterieur.fr, je suis Claudia JOLY BELLANCE,
-          je propose mes services d'organisations et de décoration d'intérieur aux "working MUM" et aux
-        familles en quêtes de bien être à leurs domiciles.</br>
-        </br>
-        Vous êtes actuellement sur la version light du site laviedinterieur.fr, si vous souhaitez
-        avoir plus d'informations sur mon parcour, mes services et mes réalisations,
+          Bienvenue sur laviedinterieur.fr, je suis Claudia JOLY BELLANCE,
+          je propose aux personnes soucieuses de leurs bien être intérieur,
+          d'organiser et/ou décorer la ou les pièces de leurs choix.</br>
+          elles se libérent ainsi des contraintes et du stress que génére le changements,
+          qu'il s'agissent d'un déménagement, une naissance ou encore de s'adapter
+          au besoin de télétravailler.</br>
+            </br>
+        Vous êtes actuellement sur la version lite du site laviedinterieur.fr, si vous souhaitez
+        avoir plus d'informations sur mon parcours, mes services et mes réalisations,
         encore un peu de patience la version compléte du site arrive très bientôt.</br>
-        Pour les plus impatients, vous pouvez me contacter ici, je répondrais avec grand plaisir à toutes vos questions.</br>
+        Pour les plus impatients, vous pouvez me contacter <a href="admin/mailto.php">ici</a>, je répondrai avec grand plaisir à toutes vos questions.</br>
         A bientôt </br>
         Clo.
         </P>
       </section>
+      <!-- FAQ -->
       <section id="faq">
         <h2>Questions fréquentes</h2>
         <button type="button" class="collapsible"><h3>Etes-vous déja en activité ?</h3></button>
@@ -65,7 +71,7 @@
             de nombreuses clientes satisfaites.
           </P>
         </div>
-        <button type="button" class="collapsible alt"><h3>Combien de temps dure un diagnostique ?</h3></button>
+        <button type="button" class="collapsible alt"><h3>Combien de temps dure un diagnostic ?</h3></button>
         <div class="content">
           <P>
             Le diagnostique en lui même environ 30 minutes pour une pièce d'envrion 20m2.
@@ -84,6 +90,7 @@
         <button type="button" class="collapsible alt"><h3>Quelles précautions prenez vous par rapport au COVID 19 ?</h3></button>
         <div class="content">
           <P>
+            Il est important de se protéger et protéger également notre entourage en cette période.
             En me basant sur les recommandations émisent par le gouvernement,
             j'ai mis en place un protocole me permettant d'assurer mes prestations dans le
             respect strict des gestes barrieres et des mesures sanitaires préconisées.
@@ -112,7 +119,6 @@
           Vous le pouvez grâce à la modélisation de votre projet en 3D. Avec cette option,
           vous êtes littéralement immergé au coeur de votre projet. Vous pouvez analyser
           le projet fini dans ses moindres détails avec un rendu haut définition.
-
           </P>
         </div>
       </section>
@@ -185,6 +191,7 @@
           pour plus d’informations sur vos droits.
         </p>
       </section>
+      <!-- Licences -->
       <section id="licences">
         <h2>Licenses</h2>
         <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
@@ -201,7 +208,7 @@
             Icones: Bootstrap(https://icons.getbootstrap.com/)
           </li>
             <li>
-              Modal: C.Ferdinandi v10 (https://github.com/cferdinandi)
+              Modal: C.Ferdinandi v10.1.2 (http://github.com/cferdinandi/modals)
             </li>
             <li>
               Scroll down: T.Nagele (https://codepen.io/xonic/pen/KWMaqe)
@@ -240,12 +247,18 @@
         </p>
       </section>
     </div>
+    <!--Menu Nav et link-->
     <aside class="contact">
-        <a href="http://localhost/lvi-static/" class="link">HOME</a> | <a href="" class="link"> FACEBOOK</a> | <a href="" class="link"> LINKEDIN </a>| <a href="" class="link"> INSTAGRAM </a>
+        <a href="index.html" class="link" target="_blank" rel="noopener">HOME</a> |
+        <a href="https://www.facebook.com/La-Vie-DInt%C3%A9rieur-2112895318969261" class="link" target="_blank" rel="noopener"> FACEBOOK</a> |
+        <a href="https://www.linkedin.com/in/claudia-joly-bellance-597082131/" class="link" target="_blank" rel="noopener"> LINKEDIN </a>|
+        <a href="" class="link"> INSTAGRAM </a>
     </aside>
+    <!-- footer -->
     <footer>
         <a class="nok-link" href="https://www.nok-it.com" target="_blank" rel="noopener">©AnotherNokCreation</a>
     </footer>
-    <script src="cgu.js"></script>
+    <!-- script JS -->
+    <script src="src/js/cgu.js"></script>
   </body>
 </html>

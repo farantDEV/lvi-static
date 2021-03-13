@@ -7,7 +7,7 @@ sf.input = document.querySelector('.container>#singular-form>#input-container>in
 sf.submitButton = document.querySelector('.container > #singular-form > #input-container > button');
 sf.successMessage = document.querySelector('.container > #singular-form > #success');
 
-sf.submitDelay = 1500;
+sf.submitDelay = 2000;
 
 sf.clickHandler = (e) => {
     switch (e.target) {
@@ -41,6 +41,9 @@ sf.submitForm = () => {
     sf.container.style.width = '';
     sf.successMessage.classList.add('shown');
     let submission = setTimeout(() => sf.form.submit(), sf.submitDelay);
+    setTimeout(function(){
+      window.location.href = 'http://localhost/lvi-static/';
+    }, 1500);
 }
 
 sf.input.addEventListener('keypress', (e) => sf.handleInputKeypress(e));

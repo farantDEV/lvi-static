@@ -15,27 +15,21 @@
 }
 img.activator, .icons {
   cursor: pointer;
-
 }
 
 ul {
     list-style-type: none;
-
     display: flex;
 }
 
 nav {
-
     border-radius: 0 5em 5em 0;
-
     clip-path: ellipse(50% 50% at -50% 50%);
-
     }
 /*navbar*/
 /*navbar height edit in js file*/
 .navbar{
     margin: -4rem 3rem;
-
 }
 .icons{
     height: 20px;
@@ -115,13 +109,10 @@ img.logo{
   transition: 2s;
   background-color: #fff;
 }
-
-
 .activator-btn:hover{
   box-shadow: 0 0 2px 1px #b0c4de;
   transition: 0.3s;
 }
-
 #sideBtn.activator-btn{
   position: absolute;
   bottom: 0;
@@ -135,14 +126,11 @@ sideBar{
   bottom: 0;
   height: 20rem;
 }
-
-
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){
   #social-icon-container{
     display: none;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px){

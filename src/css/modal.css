@@ -1,24 +1,23 @@
-/*! Modals v10.1.2 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/modals */
 .modal {
   background-color: #fff;
-  border: .0725em solid #e5e5e5;
-  border-radius: .0725em;
-  box-shadow: 0 .25em .5em rgba(0, 0, 0, .3);
+  border: 7em solid #b0c4de;
+  border-radius: 7rem;
   display: none;
   max-width: 100%;
   padding: .5em 1em;
   visibility: hidden;
-  z-index: 2
+  z-index: 150
 }
-
+#modalPlayer{
+  margin: inherit;
+}
 @media (min-width:40em) {
   .modal {
     max-width: 98%
   }
 }
-
 .modal.active {
-  display: block;
+  display: flex;
   height: 100%;
   left: 0;
   max-height: 100%;
@@ -27,39 +26,45 @@
   right: 0;
   top: 0;
   visibility: visible;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
+  border: solid 5px #b0c4de;
+  border-radius: 7rem;
+  width: 58rem;
+  animation: bgMultiColor 50s 1;
 }
-
+@keyframes bgMultiColor{
+  0% {background-color: #fff;}
+  12% {background-color: #012169;}
+  18% {background-color: #fff;}
+  24% {background-color: #da291c;}
+  35% {background-color: #012169;}
+  50% {background-color: #012169;}
+  65% {background-color: #fff;}
+  70% {background-color: #012169;}
+  90% {background-color: #fff;}
+}
+.modal.active:focus{
+  outline: none;
+}
 @media (min-width:30em) {
   .modal.active {
-    height: auto;
-    left: 3%;
+    height: 35rem;
+    /*left: 3%;*/
     margin-left: auto;
     margin-right: auto;
-    right: 3%;
-    top: 50px
+    /*right: 3%;*/
+    top: 5.5rem;
   }
 }
-
-@media (min-width:40em) {
-  .modal.active {
-    left: 8%;
-    right: 8%
-  }
-
-  .modal.active.modal-medium {
+.modal.active.modal-medium {
     width: 35em
   }
-
-  .modal.active.modal-small {
+.modal.active.modal-small {
     width: 25em
-  }
 }
-
 .modal:focus {
   outline: none
 }
-
 .modal-bg {
   background-color: #272727;
   bottom: 0;
@@ -68,9 +73,8 @@
   opacity: .9;
   right: 0;
   top: 0;
-  z-index: 1
+  z-index: 100
 }
-
 .close {
   color: gray;
   cursor: pointer;
@@ -79,18 +83,22 @@
   font-size: 1.5em;
   text-decoration: none
 }
-
+.btn.close-btn{
+  position: fixed;
+  right: 15rem;
+}
 .close:hover {
   color: #5a5a5a;
   cursor: pointer
 }
 .media-player{
-    width: 720px;
-    height: 486px;
+    width: 736px;
+    height: 414px;
+    margin: 4rem;
+    border-radius: 3rem;
 }
 .modal-text{
-    width: 39%;
-    display: inline-block;
+    background-color: #fff;
     text-align: center;
 }
 H2.discount{
@@ -101,7 +109,6 @@ H2.discount{
 }
 P.discount{
     margin: 0 15% 0 15%;
-    
 }
 img.modal-logo-lvi{
     width: 35%;
@@ -114,31 +121,55 @@ img.modal-logo-rd{
 img.logo-rs{
     width: 35px;
 }
-
 /*Responsive*/
-
 /*Tablettes (less than 768px)*/
 @media (min-width: 768px) and (max-width: 1199.98px){
-    .modal-text{
-        display: table-cell;
+    .modal.active{
+        height: 27rem;
     }
     .media-player{
-        width: 100%;
-        height: 386px;
+        width: 43rem;
+        height: 23rem;
+        margin: 2rem;
+    }
+    .modal, .modal.active{
+      border: none;
+      border-radius: 0;
+    }
+    .btn.close-btn{
+      right: 1rem;
     }
 }
-
 /*Phone (portrait less than 576px)*/
 @media screen and (max-width: 575.98px){
     .modal-text{
         display: table-cell;
     }
+    .modal{
+      padding: 0;
+      border: 1rem solid white;
+    }
+    .btn.close-btn{
+      right: 1rem;
+      top: 4rem;
+    }
+    .modal.active{
+      height: auto;
+      /*left: auto;
+      right: auto;*/
+      top: auto;
+      border-radius: 0;
+      width: 21rem;
+      margin: auto;
+      border: solid 1px #012169;
+    }
     .media-player{
-        width: 100%;
-        height: 286px;
+        width: 24rem;;
+        height: 13rem;
+        margin: 0rem;
     }
     P.discount, H2.discount{
         margin: 0;
     }
-    
+
 }
