@@ -18,7 +18,7 @@ function resizeScreen(){
       window.onscroll = function() {scrollFunction()};
   }
 }
-window.onresize = resizescreen;
+window.onresize = resizeScreen;
 //Resize
 function scrollFunctionOnPhone() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
